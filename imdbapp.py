@@ -14,7 +14,24 @@ def load_data():
 data = load_data()
 
 # Judul aplikasi
-st.title('Analisis Film IMDb Top 250')
+st.markdown(f"""
+        <div style="display: flex; justify-content: center;">
+            <img src="{"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1150px-IMDB_Logo_2016.svg.png"}" width="200">
+        </div>
+    """, unsafe_allow_html=True)
+
+# Menambahkan CSS untuk memusatkan judul
+st.markdown("""
+    <style>
+    .centered-title {
+        text-align: center;
+        font-size: 36px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Judul aplikasi yang dipusatkan
+st.markdown('<h1 class="centered-title">IMDB TOP 250 Movies</h1>', unsafe_allow_html=True)
 
 # Top 10 Film berdasarkan IMDb Rating
 st.header('Top 10 Film dengan IMDb Rating Tertinggi')
