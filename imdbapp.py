@@ -164,3 +164,6 @@ plt.xlabel('Tahun Rilis')
 plt.ylabel('IMDb Rating')
 plt.grid(True)
 st.pyplot(plt)
+
+
+st.caption('© 21082010090 - Annisa Dita Putri Kartika')
