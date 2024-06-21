@@ -69,7 +69,7 @@ plt.ylabel('Keuntungan Bersih (Juta USD)')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 st.pyplot(plt)
-st.write("Grafik ini menunjukkan keuntungan bersih (dalam juta USD) dari 5 film dengan anggaran tertinggi. Ini menunjukkan bagaimana film-film dengan anggaran besar dapat menghasilkan keuntungan yang signifikan.")
+st.write("Grafik ini menunjukkan keuntungan bersih (dalam juta USD) dari 5 film dengan anggaran tertinggi. Ini menunjukkan bahwa film dengan budget yang tinggi belum tentu mendapatkan keuntungan yang tinggi juga dikarenakan dapat dilihat bahwa Film Dangal dan 3 Idiots malah mengalami kerugian.")
 
 # Komposisi Warna Film
 st.header('Komposisi Warna Film')
@@ -79,7 +79,7 @@ plt.figure(figsize=(8, 8))
 plt.pie(color_counts, labels=color_counts.index, autopct='%1.1f%%', startangle=140, colors=colors)
 plt.axis('equal')
 st.pyplot(plt)
-st.write("Pie chart ini menunjukkan komposisi warna film dalam data. Sebagian besar film berwarna, dengan persentase kecil dari film yang berwarna hitam-putih.")
+st.write("Pie chart ini menunjukkan komposisi warna film dalam data. Sebagian besar film berwarna, dan sebagian kecil film yang berwarna hitam-putih. Ini sangat mungkin menunjukkan bahwa film dengan warna hitam putih sudah jarang digunakan")
 
 # Komposisi Klasifikasi Film
 st.header('Komposisi Klasifikasi Film')
@@ -91,7 +91,7 @@ plt.pie([1], radius=0.6, colors='white')
 plt.title('Komposisi Klasifikasi Film')
 plt.axis('equal')
 st.pyplot(plt)
-st.write("Pie chart ini menunjukkan distribusi klasifikasi film dalam data. Klasifikasi film dapat memberikan wawasan tentang audiens target dari film-film tersebut.")
+st.write("Pie chart ini menunjukkan distribusi klasifikasi film dalam data. Klasifikasi film dapat memberikan wawasan tentang audiens target dari film-film tersebut.Klasifikasi film seperti G, PG, PG-13, R, dan NC-17 digunakan untuk memberikan panduan usia kepada penonton tentang konten yang mungkin terdapat dalam film. G adalah untuk semua usia, PG memerlukan bimbingan orang tua, PG-13 mengharuskan perhatian khusus untuk anak-anak di bawah 13 tahun, R membatasi penonton di bawah 17 tahun tanpa pendampingan orang dewasa, dan NC-17 hanya untuk dewasa. Approved sudah tidak lagi umum digunakan, sementara Not Rated menunjukkan bahwa film belum dinilai atau tidak memiliki rating resmi. Dan Dari data menunjukkan pada Top 250 paling banyak film dengan klasifikasi R")
 
 # Treemap Komposisi Jenis Sound Mix dalam Film
 st.header('Treemap Komposisi Jenis Sound Mix dalam Film')
