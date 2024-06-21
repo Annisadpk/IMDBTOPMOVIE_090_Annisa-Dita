@@ -1,3 +1,6 @@
+Sure, I'll add explanations for each chart below the respective chart using `st.write`:
+
+```python
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -42,6 +45,7 @@ plt.xlabel('IMDb Rating')
 plt.title('Top 10 Film dengan IMDb Rating Tertinggi')
 plt.gca().invert_yaxis()
 st.pyplot(plt)
+st.write("Grafik ini menampilkan 10 film dengan rating IMDb tertinggi dalam data. Film-film ini memiliki rating yang sangat tinggi, menunjukkan bahwa mereka sangat dihargai oleh penonton dan kritikus.")
 
 # Rata-rata IMDb Rating berdasarkan Sound Mix
 st.header('Rata-rata IMDb Rating berdasarkan Sound Mix')
@@ -54,6 +58,7 @@ plt.ylabel('Rata-rata IMDb Rating')
 plt.xticks(rotation=45)
 plt.tight_layout()
 st.pyplot(plt)
+st.write("Grafik ini menunjukkan rata-rata rating IMDb untuk berbagai jenis sound mix yang digunakan dalam film. Ini bisa memberikan wawasan tentang bagaimana kualitas audio bisa mempengaruhi penilaian film.")
 
 # Keuntungan Bersih 5 Film dengan Budget Tertinggi
 st.header('Keuntungan Bersih 5 Film dengan Budget Tertinggi (dalam juta USD)')
@@ -67,6 +72,7 @@ plt.ylabel('Keuntungan Bersih (Juta USD)')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 st.pyplot(plt)
+st.write("Grafik ini menunjukkan keuntungan bersih (dalam juta USD) dari 5 film dengan anggaran tertinggi. Ini menunjukkan bagaimana film-film dengan anggaran besar dapat menghasilkan keuntungan yang signifikan.")
 
 # Komposisi Warna Film
 st.header('Komposisi Warna Film')
@@ -76,6 +82,7 @@ plt.figure(figsize=(8, 8))
 plt.pie(color_counts, labels=color_counts.index, autopct='%1.1f%%', startangle=140, colors=colors)
 plt.axis('equal')
 st.pyplot(plt)
+st.write("Pie chart ini menunjukkan komposisi warna film dalam data. Sebagian besar film berwarna, dengan persentase kecil dari film yang berwarna hitam-putih.")
 
 # Komposisi Klasifikasi Film
 st.header('Komposisi Klasifikasi Film')
@@ -87,6 +94,7 @@ plt.pie([1], radius=0.6, colors='white')
 plt.title('Komposisi Klasifikasi Film')
 plt.axis('equal')
 st.pyplot(plt)
+st.write("Pie chart ini menunjukkan distribusi klasifikasi film dalam data. Klasifikasi film dapat memberikan wawasan tentang audiens target dari film-film tersebut.")
 
 # Treemap Komposisi Jenis Sound Mix dalam Film
 st.header('Treemap Komposisi Jenis Sound Mix dalam Film')
@@ -97,6 +105,7 @@ squarify.plot(sizes=sound_mix_counts.values, label=sound_mix_counts.index, alpha
 plt.title('Treemap Komposisi Jenis Sound Mix dalam Film')
 plt.axis('off')
 st.pyplot(plt)
+st.write("Treemap ini menunjukkan distribusi jenis sound mix yang digunakan dalam film. Ukuran setiap kotak sebanding dengan jumlah film yang menggunakan jenis sound mix tersebut.")
 
 # Distribusi Runtime Film
 st.header('Distribusi Runtime Film (dalam Menit)')
@@ -130,6 +139,7 @@ plt.ylabel('Frekuensi')
 plt.grid(False)
 plt.xticks(ticks=plt.xticks()[0], labels=[f'{int(tick)}' for tick in plt.xticks()[0]])
 st.pyplot(plt)
+st.write("Histogram ini menunjukkan distribusi durasi film dalam menit. Kebanyakan film memiliki durasi antara 100 hingga 150 menit.")
 
 # Distribusi IMDb Ratings
 st.header('Distribusi IMDb Ratings')
@@ -140,6 +150,7 @@ plt.xlabel('IMDb Rating')
 plt.ylabel('Frekuensi')
 plt.grid(False)
 st.pyplot(plt)
+st.write("Histogram ini menunjukkan distribusi rating IMDb dari film-film dalam data. Rating IMDb berkisar dari 8 hingga hampir 10, menunjukkan bahwa semua film dalam data ini sangat dihargai.")
 
 # Hubungan Budget dan Pendapatan Kotor Global
 st.header('Hubungan Budget dan Pendapatan Kotor Global')
@@ -150,6 +161,7 @@ plt.xlabel('Budget')
 plt.ylabel('Pendapatan Kotor Global')
 plt.grid(True)
 st.pyplot(plt)
+st.write("Scatter plot ini menunjukkan hubungan antara budget film dan pendapatan kotor global. Secara umum, film dengan budget lebih tinggi cenderung menghasilkan pendapatan kotor yang lebih besar.")
 
 # Scatter Plot Tahun Rilis dan IMDb Rating
 st.header('Scatter Plot Tahun Rilis dan IMDb Rating Film')
@@ -164,6 +176,6 @@ plt.xlabel('Tahun Rilis')
 plt.ylabel('IMDb Rating')
 plt.grid(True)
 st.pyplot(plt)
+st.write("Scatter plot ini menunjukkan hubungan antara tahun rilis film dan rating IMDb. Ini bisa memberikan wawasan tentang bagaimana persepsi penonton terhadap film mungkin telah berubah selama bertahun-tahun.")
 
-
-st.caption('© 21082010090 - Annisa Dita Putri Kartika')
+st.caption('© 21082010090 - Annisa
