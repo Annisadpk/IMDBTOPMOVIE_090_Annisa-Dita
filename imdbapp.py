@@ -175,4 +175,4 @@ plt.grid(True)
 st.pyplot(plt)
 st.write("Scatter plot ini menunjukkan hubungan antara tahun rilis film dan rating IMDb. Ini bisa memberikan wawasan tentang bagaimana persepsi penonton terhadap film mungkin telah berubah selama bertahun-tahun.")
 
-st.caption('© 21082010090 - Annisa
+st.caption('© 21082010090 - Annisa)
