@@ -1,6 +1,3 @@
-Sure, I'll add explanations for each chart below the respective chart using `st.write`:
-
-```python
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
